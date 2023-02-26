@@ -1,6 +1,7 @@
 
-Messi;23;06;1987;1.71;10;Tien dao;Argentina;L
-Mbappe;17;02;1998;1.76;29;Tien dao;Phap;R
+Mbappe;19;04;1998;1.78;7;Tien dao;Phap;R
 Halland;17;02;2000;1.91;9;Tien dao;Na Uy;L
-Ronaldo;19;02;1985;1.90;7;Tien dao;Bo Dao Nha;B
 Pedri;18;04;2002;1.76;8;Tien ve;Tay Ban Nha;R
+Odegaard;18;07;1998;1.78;6;Tien ve;Na Uy;L
+Donnarumma;17;04;1999;1.96;1;Thu mon;Italy;R
+Theo Hernandez;22;09;1998;1.84;19;Hau ve;Phap;L
