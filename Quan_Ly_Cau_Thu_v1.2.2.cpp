@@ -235,7 +235,17 @@ node changePlayerData(FootballPlayer player, int shirtNumber){
 	return head;
 }
 
-void printPlayersByIncreasingShirtNumber(node head, int STT) {
+void listPlayer(node head){
+	printTitle();
+	int STT = 1;
+	for(node p = head; p != NULL; p = p->next){
+		printPlayer(p,STT);
+		STT++;
+	}
+	printBoardLine();	
+}
+
+void printPlayersByIncreasingShirtNumber(node head) {
 	for(node p = head; p != NULL; p = p->next){
 		for(node q = p->next; q != NULL; q = q->next){
 			if(p->data.shirtNumber > q->data.shirtNumber){
@@ -245,15 +255,10 @@ void printPlayersByIncreasingShirtNumber(node head, int STT) {
 			}
 		}
 	}
-	printTitle();
-	for(node p = head; p != NULL; p = p->next){
-		printPlayer(p, STT);
-		STT++;
-	}
-	printBoardLine();
+	listPlayer(head);
 }
 
-void printPlayerByABCName(node head, int STT){
+void printPlayerByABCName(node head){
 	for(node p = head; p != NULL; p = p->next){
 		for(node q = p->next; q != NULL; q = q->next){
 			if(strcmp(p->data.name,q->data.name) > 0){
@@ -263,12 +268,7 @@ void printPlayerByABCName(node head, int STT){
 			}
 		}
 	}
-	printTitle();
-	for(node p = head; p != NULL; p = p->next){
-		printPlayer(p, STT);
-		STT++;
-	}
-	printBoardLine();
+	listPlayer(head);
 }
 
 void findName(node head, char findingName[], int STT){
@@ -347,16 +347,6 @@ void printPlayerByDomninantFoot(node head, char dominantFoot[], int STT){
 	printBoardLine();
 }
 
-void listPlayer(node head){
-	printTitle();
-	int STT = 1;
-	for(node p = head; p != NULL; p = p->next){
-		printPlayer(p,STT);
-		STT++;
-	}
-	printBoardLine();	
-}
-
 int main()
 {
 	int STT;
@@ -422,7 +412,6 @@ int main()
 			
 			case 5:
 				int sortChoose;
-				STT = 1;
 				printf("\n[5] - Sap xep.\n");
 				printf("--------------\n");
 				printf("\t1 - Sap xep so ao theo thu tu tang dan.\n");
@@ -434,7 +423,7 @@ int main()
 					case 1:
 						head = insertDataToNode(player);
 						printf("\n[1] - Danh sach cac cau thu theo thu tu so ao tang dan.\n");
-						printPlayersByIncreasingShirtNumber(head, STT);
+						printPlayersByIncreasingShirtNumber(head);
 						fclose(f);
 						system("pause");
 						system("cls");
@@ -442,7 +431,7 @@ int main()
 					case 2:
 						head = insertDataToNode(player);
 						printf("\n[2] - Danh sach cac cau thu theo thu tu ABC.\n");
-						printPlayerByABCName(head, STT);
+						printPlayerByABCName(head);
 						fclose(f);
 						system("pause");
 						system("cls");
