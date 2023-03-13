@@ -1,8 +1,8 @@
 
-Kylian Mbappe;23;02;1998;1.76;7;Tien dao;Phap;R
-Erling Haaland;14;07;2000;1.94;9;Tien dao;Na Uy;L
-Pedri;18;04;2002;1.76;8;Tien ve;Tay Ban Nha;R
-Odegaard;18;07;1998;1.78;6;Tien ve;Na Uy;L
-Donnarumma;17;04;1999;1.96;1;Thu mon;Italy;R
-Theo Hernandez;22;09;1998;1.84;19;Hau ve;Phap;L
-Phil Foden;15;08;2000;1.75;10;Tien ve;Anh;L
+Kylian Mbappe;23;02;1998;1.76;7;Tien Dao;Phap;R
+Erling Haaland;14;07;2000;1.94;9;Tien Dao;Na Uy;L
+Pedri;18;04;2002;1.76;8;Tien Ve;Tay Ban Nha;R
+Odegaard;18;07;1998;1.78;6;Tien Ve;Na Uy;L
+Donnarumma;17;04;1999;1.96;1;Thu Mon;Italy;R
+Theo Hernandez;22;09;1998;1.84;19;Hau Ve;Phap;L
+Phil Foden;15;08;2000;1.75;10;Tien Ve;Anh;L
